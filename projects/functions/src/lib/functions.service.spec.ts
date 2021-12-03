@@ -67,4 +67,14 @@ describe('FunctionsService', () => {
       expect(service.sortAlphabetically('common language')).toBe('Common Language');
     });
   });
+
+  describe('service.findLongestString()', () => {
+    it('should find a longest string in an array', () => {
+      expect(service.findLongestString([
+        'Ukraine',
+        'Poland',
+        'United States Of America'
+      ])).toBe('United States Of America');
+    });
+  });
 });

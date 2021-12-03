@@ -27,4 +27,8 @@ export class FunctionsService {
   capitalize(input: string): string {
     return '';
   }
+
+  findLongestString(input: string[]): string {
+    return '';
+  }
 }
