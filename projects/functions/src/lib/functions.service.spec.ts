@@ -37,4 +37,16 @@ describe('FunctionsService', () => {
       expect(service.reverseNumber(123450)).toBe(54321);
     });
   });
+
+  describe('service.isPalindrome()', () => {
+    it('should confirm "madam" is a palindrome', () => {
+      expect(service.isPalindrome('madam')).toBe(true);
+    });
+    it('should confirm "nurses run" is a palindrome', () => {
+      expect(service.isPalindrome('nurses run')).toBe(true);
+    });
+    it('should confirm that dog is NOT a palindrome', () => {
+      expect(service.isPalindrome('dog')).toBe(false);
+    });
+  });
 });

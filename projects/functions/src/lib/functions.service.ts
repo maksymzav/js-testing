@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FunctionsService {
 
-  constructor() { }
+  constructor() {
+  }
 
   reverseString(input: string): string {
     return '';
@@ -13,5 +14,9 @@ export class FunctionsService {
 
   reverseNumber(input: number): number {
     return 0;
+  }
+
+  isPalindrome(input: string): boolean {
+    return false;
   }
 }
