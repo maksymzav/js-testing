@@ -23,4 +23,8 @@ export class FunctionsService {
   sortAlphabetically(input: string): string {
     return '';
   }
+
+  capitalize(input: string): string {
+    return '';
+  }
 }

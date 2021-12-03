@@ -51,8 +51,20 @@ describe('FunctionsService', () => {
   });
 
   describe('service.sortAlphabetically()', () => {
-    it('should sort the string with letters in alphabetical order', () => {
+    it('should sort the string banderaisahero in alphabetical order', () => {
       expect(service.sortAlphabetically('banderaisahero')).toBe('aaabdeehinorrs');
+    });
+    it('should sort the string commonlanguage in alphabetical order', () => {
+      expect(service.sortAlphabetically('commonlanguage')).toBe('aacegglmmnnoou');
+    });
+  });
+
+  describe('service.capitalize()', () => {
+    it('should capitalize the string bandera is a hero', () => {
+      expect(service.sortAlphabetically('bandera is a hero')).toBe('Bandera Is A Hero');
+    });
+    it('should capitalize the string common language', () => {
+      expect(service.sortAlphabetically('common language')).toBe('Common Language');
     });
   });
 });
