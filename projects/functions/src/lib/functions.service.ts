@@ -6,4 +6,12 @@ import { Injectable } from '@angular/core';
 export class FunctionsService {
 
   constructor() { }
+
+  reverseString(input: string): string {
+    return '';
+  }
+
+  reverseNumber(input: number): number {
+    return 0;
+  }
 }
