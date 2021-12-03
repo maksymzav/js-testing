@@ -19,4 +19,8 @@ export class FunctionsService {
   isPalindrome(input: string): boolean {
     return false;
   }
+
+  sortAlphabetically(input: string): string {
+    return '';
+  }
 }

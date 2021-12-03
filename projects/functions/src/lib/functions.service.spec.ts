@@ -49,4 +49,10 @@ describe('FunctionsService', () => {
       expect(service.isPalindrome('dog')).toBe(false);
     });
   });
+
+  describe('service.sortAlphabetically()', () => {
+    it('should sort the string with letters in alphabetical order', () => {
+      expect(service.sortAlphabetically('banderaisahero')).toBe('aaabdeehinorrs');
+    });
+  });
 });
